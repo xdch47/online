@@ -2406,6 +2406,10 @@ void ChildSession::loKitCallback(const int type, const std::string& payload)
         sendTextFrame("tableselected: " + payload);
         break;
 
+    case LOK_CALLBACK_JSDIALOG:
+        sendTextFrame("jsdialog: " + payload);
+        break;
+
 #if !ENABLE_DEBUG
     // we want a compilation-time failure in the debug builds; but ERR in the
     // log in the release ones
