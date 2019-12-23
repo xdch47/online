@@ -207,14 +207,14 @@ def writeUnocommandsJS(onlineDir, lofficeDir, menuCommands, contextCommands, too
 var unoCommandsArray = {\n''')
 
     for key in sorted(descriptions.keys()):
-        #f.write(('    ' + key + ": _('" + descriptions[key] + "'),\n").encode('utf-8'))
-        f.write(('\t' + key + ':{').encode('utf-8'))
+        #f.write(('    ' + key + ": _('" + descriptions[key] + "'),\n")
+        f.write('\t' + key + ':{')
         for type in sorted(descriptions[key].keys()):
-            f.write((type + ':{').encode('utf-8'))
+            f.write(type + ':{')
             for menuType in sorted(descriptions[key][type].keys()):
-                f.write((menuType + ":_('" + descriptions[key][type][menuType] + "'),").encode('utf-8'))
-            f.write(('},').encode('utf-8'))
-        f.write(('},\n').encode('utf-8'))
+                f.write(menuType + ":_('" + descriptions[key][type][menuType] + "'),")
+            f.write('},')
+        f.write('},\n')
 
     f.write('''};
 
@@ -261,7 +261,7 @@ def parseUnocommandsJS(onlineDir):
     f = open(onlineDir + '/loleaflet/src/unocommands.js', 'r')
     readingCommands = False
     for line in f:
-        line = line.decode('utf-8')
+        line = line
         m = re.match(r"\t([^:]*):.*", line)
         if m:
             command = m.group(1)
@@ -276,7 +276,7 @@ def parseUnocommandsJS(onlineDir):
 def writeTranslations(onlineDir, translationsDir, strings):
     keys = set(strings.keys())
 
-    dir = translationsDir + '/source/'
+    dir = translationsDir
     for lang in os.listdir(dir):
         poFile = dir + lang + '/officecfg/registry/data/org/openoffice/Office/UI.po'
         if not os.path.isfile(poFile):

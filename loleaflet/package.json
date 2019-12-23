@@ -8,7 +8,7 @@
     "autolinker": "1.4.3",
     "bootstrap": "3.3.6",
     "browserify": "13.1.0",
-    "browserify-css": "0.9.1",
+    "browserify-css": "^0.15.0",
     "d3": "3.5.17",
     "eslint": "3.0.0",
     "exorcist": "0.4.0",
@@ -16,7 +16,7 @@
     "jquery": "2.2.4",
     "jquery-contextmenu": "2.2.3",
     "jquery-mousewheel": "3.1.3",
-    "jquery-ui": "1.10.5",
+    "jquery-ui": "^1.12.1",
     "json-js": "1.1.2",
     "l10n-for-node": "0.0.1",
     "select2": "4.0.1",
@@ -39,5 +39,8 @@
   "scripts": {
     "postinstall": "browserify node_modules/@braintree/sanitize-url/index.js --standalone sanitizeUrl > node_modules/@braintree/sanitize-url/dist.js"
   },
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "jquery-ui-themes": "^1.12.0"
+  }
 }
