@@ -2,12 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 20:32+0200\n"
+"POT-Creation-Date: 2019-12-24 00:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -752,7 +751,7 @@ msgstr ""
 msgid "Downloading..."
 msgstr "डाउनलोड कीया जा रहा है"
 
-#: src/control/Toolbar.js:103 src/map/Map.js:1171
+#: src/control/Toolbar.js:103 src/map/Map.js:1175
 msgid "Saving..."
 msgstr "सहेजा जा रहा है..."
 
@@ -1034,7 +1033,7 @@ msgstr ""
 msgid "Inactive document - please click to resume editing"
 msgstr "निष्क्रिय दस्तावेज़ - संपादन करने के लिये कृप्या क्लिक करें।"
 
-#: src/map/Map.js:1174
+#: src/map/Map.js:1178
 msgid "Loading..."
 msgstr "लोड कर रहा है..."
 

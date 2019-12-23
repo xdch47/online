@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice Online UI\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 20:32+0200\n"
+"POT-Creation-Date: 2019-12-24 00:33+0100\n"
 "PO-Revision-Date: 2019-06-01 12:01+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org <users@sl.libreoffice.org>\n"
@@ -754,7 +754,7 @@ msgstr "Desni rob"
 msgid "Downloading..."
 msgstr "Prejemanje ..."
 
-#: src/control/Toolbar.js:103 src/map/Map.js:1171
+#: src/control/Toolbar.js:103 src/map/Map.js:1175
 msgid "Saving..."
 msgstr "Shranjevanje ..."
 
@@ -1044,7 +1044,7 @@ msgstr "%d minut nazaj"
 msgid "Inactive document - please click to resume editing"
 msgstr "Neaktivni dokument – kliknite za nadaljevanje urejanja"
 
-#: src/map/Map.js:1174
+#: src/map/Map.js:1178
 msgid "Loading..."
 msgstr "Nalaganje ..."
 
